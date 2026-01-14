@@ -3,288 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MS Enterprises</title>
+<title>Website Shutdown</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-html { scroll-behavior: smooth; }
-
 body {
-  background: #05070f;
-  color: #ffffff;
-  overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
-/* HEADER */
-header {
-  position: fixed;
-  top: 18px;
-  left: 18px;
-  display: flex;
-  align-items: center;
-  z-index: 1000;
+.container {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
 }
 
-header img { width: 75px; }
-
-.header-text {
-  margin-left: 14px;
+h1 {
+    color: #00eaff;
 }
 
-.header-text h1 {
-  font-size: 26px;
-  color: #ff7a18;
-  font-weight: 700;
-}
-
-.header-text p {
-  font-size: 13px;
-  color: #e5e7eb;
-  line-height: 1.4;
-}
-
-/* SECTIONS */
-section {
-  min-height: 100vh;
-  padding: 130px 8% 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* HERO */
-.hero {
-  background: radial-gradient(circle at top, #1e293b, #020617);
-}
-
-.hero h2 {
-  font-size: clamp(40px, 6vw, 78px);
-  max-width: 900px;
-  color: #ff7a18;
-}
-
-/* REVEAL */
-.reveal {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.reveal.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* CONTENT */
-.content {
-  background: #ffffff;
-  color: #020617;
-}
-
-.content img {
-  width: 100%;
-  border-radius: 16px;
-  margin-bottom: 35px;
-  box-shadow: 0 40px 60px rgba(0,0,0,0.35);
-}
-
-.content h2 {
-  font-size: 34px;
-  color: #ff7a18;
-  margin-bottom: 20px;
-}
-
-.content p, .content li {
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-/* ORANGE */
-.orange {
-  background: linear-gradient(135deg, #ff7a18, #ff4e00);
-  color: #020617;
-}
-
-/* LIST */
-ul { list-style: none; }
-ul li::before {
-  content: "➤";
-  color: #ff7a18;
-  margin-right: 10px;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-}
-
-/* CONTACT */
-.contact-box {
-  background: #020617;
-  color: #e5e7eb;
-  padding: 30px;
-  border-left: 6px solid #ff7a18;
-  border-radius: 12px;
-}
-
-/* BOTTOM IMAGE PAIRS */
-.pair-section {
-  background: #020617;
-  padding: 100px 8%;
-}
-
-.pair-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.pair-grid img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 40px 70px rgba(255,122,24,0.25);
-  transition: transform 0.6s ease;
-}
-
-.pair-grid img:hover {
-  transform: scale(1.03);
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .pair-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* FOOTER */
-footer {
-  background: #020617;
-  padding: 35px;
-  text-align: center;
-  color: #94a3b8;
+img {
+    width: 160px;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 12px cyan);
 }
 </style>
 </head>
 
 <body>
+<div class="container">
+    <h1>This website is being shutdowned</h1>
+    <p>The plan is being ended</p>
 
-<header>
-  <img src="logo.jpg">
-  <div class="header-text">
-    <h1>MS Enterprises</h1>
-    <p>
-      Trusted Industrial Fabrication Works<br>
-      Since 2014<br>
-      Quality • Reliability • Excellence
-    </p>
-  </div>
-</header>
-
-<section class="hero">
-  <h2 class="reveal">Engineering Strength Into Every Structure</h2>
-</section>
-
-<section class="content">
-  <img src="1.jpg">
-  <h2 class="reveal">About Us :</h2>
-  <p class="reveal">
-    Two young Aspirant Established in 2014. We are Trusted service provider in
-    Industrial Fabrication Works. Expertise in high-quality fabrication,
-    structural works, customized fabrication & on-site installation.
-    Over a decade of durable, precise & cost-effective solutions.
-  </p>
-</section>
-
-<section class="content orange">
-  <img src="M.jpg">
-  <h2 class="reveal">Mission & Vision</h2>
-  <p class="reveal">
-    <strong>Mission:</strong> Deliver reliable and high-quality fabrication solutions that meet industry standards and client expectations.<br><br>
-    <strong>Vision:</strong> Become a leading name in industrial fabrication with innovative, safe & durable services.
-  </p>
-</section>
-
-<section class="content">
-  <img src="2.jpg">
-  <h2 class="reveal">Our Services :</h2>
-  <div class="grid reveal">
-    <ul>
-      <li>Structural Fabrication Works</li>
-      <li>Industrial Shed & Roofing Fabrication</li>
-      <li>Heavy & Light Metal Fabrication</li>
-      <li>Customized Equipment & Component Fabrication</li>
-      <li>On-site Installation & Maintenance Support</li>
-    </ul>
-    <ul>
-      <li>10+ years of fabrication experience</li>
-      <li>Skilled and experienced workforce</li>
-      <li>High-quality raw materials & advanced techniques</li>
-      <li>On-time project delivery</li>
-      <li>Strong client relationships</li>
-    </ul>
-  </div>
-</section>
-
-<section class="content orange">
-  <img src="3.jpg">
-  <h2 class="reveal">Our Esteemed Clients :</h2>
-  <div class="grid reveal">
-    <ul>
-      <li>Cummins</li>
-      <li>Datwyler Pharmacy</li>
-      <li>Valeo India</li>
-      <li>Garware Wall Ropes</li>
-      <li>Tyco Electronics</li>
-      <li>Mahle Filter Systems</li>
-      <li>Nikhtish Filtration</li>
-      <li>Deccan Gymkhana Badminton Court</li>
-      <li>Modern College</li>
-    </ul>
-
-    <div class="contact-box">
-      <p><strong>Address:</strong><br>
-        Hansh Vihar, Shop No. 1 (Left), Bhusari Colony,<br>
-        Kothrud, Pune – 411038</p><br>
-      <p><strong>Contact:</strong> +91-97654 92626</p>
-      <p><strong>Email:</strong> mauli.soumya30@gmail.com</p>
-      <p><strong>GST:</strong> 27AIBPN7875R1Z8</p>
-    </div>
-  </div>
-</section>
-
-<!-- BOTTOM IMAGE PAIRS -->
-<section class="pair-section">
-  <div class="pair-grid reveal">
-    <img src="4.jpg">
-    <img src="5.jpg">
-  </div>
-</section>
-
-<footer>
-  © MS Enterprises – Industrial Fabrication Excellence
-</footer>
-
-<script>
-const reveals = document.querySelectorAll(".reveal");
-const revealOnScroll = () => {
-  reveals.forEach(el => {
-    if (el.getBoundingClientRect().top < window.innerHeight * 0.85) {
-      el.classList.add("show");
-    }
-  });
-};
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-</script>
-
+    <p><strong>Powered By Darsh Web Designers</strong></p>
+</div>
 </body>
 </html>
